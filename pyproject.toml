@@ -1,0 +1,40 @@
+[project]
+name = "legislative-data-analytics"
+version = "0.1.0"
+description = "Clean Architecture CSV processing app for legislative voting analytics (Quorum challenge)."
+readme = "ReadMe.md"
+requires-python = ">=3.11"
+authors = [{ name = "Igor Simoes" }]
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3.0",
+  "pytest-cov>=6.0.0",
+  "ruff>=0.8.0",
+  "mypy>=1.13.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+markers = [
+  "edge: edge-case focused tests (explicitly executed by run script)",
+  "integration: integration tests (IO/repositories)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+mypy_path = ["src"]
+packages = ["legislative_analytics"]
+warn_unused_ignores = true
+
+
