@@ -21,8 +21,8 @@ ensure_uv() {
   fi
 
   read -r -p "Install uv now? Yes or No: " answer
-  case "${answer,,}" in
-    y|yes)
+  case "$answer" in
+    [Yy]|[Yy][Ee][Ss])
       echo "==> Installing uv"
       if command -v brew >/dev/null 2>&1; then
         brew install uv
