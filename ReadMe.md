@@ -1,5 +1,9 @@
 # Votes Information System - Legislative Data Analytics
 
+Author: Igor Simões.
+
+Hi! This is a quick code challenge for Quorum
+
 Table of contents
 
 - [App Planning](#app-planning)
