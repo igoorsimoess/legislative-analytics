@@ -4,6 +4,8 @@ Author: Igor Simões.
 
 Hi! This is a quick code challenge for Quorum
 
+Repository: [igoorsimoess/legislative-analytics](https://github.com/igoorsimoess/legislative-analytics)
+
 Table of contents
 
 - [App Planning](#app-planning)
@@ -160,6 +162,11 @@ A mature system will always allow us to debug without pain. That's why I took th
 ### Run the Project
 
 #### Automatic - One command 
+
+```bash
+chmod +x ./run.sh
+```
+
 
 ```bash
 ./run.sh
